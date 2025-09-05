@@ -1,14 +1,14 @@
 <p align="center">
-  <a href="https://www.php.net/" target="_blank" style="text-decoration:none;">
+  <a href="https://www.php.net/" target="_blank">
     <img src="./setup-logos/php02-svgrepo-com.svg" width="120" alt="PHP Logo" />
   </a>
-  <a href="https://httpd.apache.org/" target="_blank" style="text-decoration:none;">
+  <a href="https://httpd.apache.org/" target="_blank">
     <img src="./setup-logos/apache-svgrepo-com.svg" width="120" alt="Apache Logo" />
   </a>
-  <a href="https://www.nginx.com/" target="_blank" style="text-decoration:none;">
+  <a href="https://www.nginx.com/" target="_blank">
     <img src="./setup-logos/nginx-svgrepo-com.svg" width="120" alt="Nginx Logo" />
   </a>
-  <a href="https://www.docker.com/" target="_blank" style="text-decoration:none;">
+  <a href="https://www.docker.com/" target="_blank">
     <img src="./setup-logos/docker-svgrepo-com.svg" width="120" alt="Docker Logo" />
   </a>
 </p>
