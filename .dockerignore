@@ -1,0 +1,64 @@
+# =============================================================================
+# DOCKERIGNORE - ARCHIVOS EXCLUIDOS DEL CONTEXTO DOCKER
+# =============================================================================
+
+# ========================
+# Archivos de entorno
+# ========================
+.env*
+env/
+.env.*
+
+
+# ========================
+# Archivos de desarrollo
+# ========================
+.git/
+.gitignore
+*.md
+.vscode/
+.idea/
+
+# ========================
+# Dependencias
+# ========================
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+
+
+# ========================
+# Archivos de sistema y temporales
+# ========================
+*.log
+*.tmp
+*.bak
+*.swp
+
+.DS_Store
+Thumbs.db
+
+logs/
+cache/
+tmp/
+temp/
+
+
+# ========================
+# Archivos de prueba
+# ========================
+tests/
+test/
+*.test.*
+
+
+# ========================
+# Archivos y carpetas de desarrollo
+# ========================
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+.gitlab-ci.yml
+docs/
+README.md

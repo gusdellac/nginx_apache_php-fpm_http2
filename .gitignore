@@ -1,0 +1,76 @@
+# -----------------------
+# Sistema operativo
+# -----------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# -----------------------
+# PHP
+# -----------------------
+# Composer
+/vendor/
+composer.lock
+
+# Logs y cache
+*.log
+*.cache
+*.tmp
+
+# Sessions
+sessions/
+
+# Configuración local
+.env
+.env.local
+.env.*.local
+
+# -----------------------
+# Docker
+# -----------------------
+# Contenedores y volúmenes locales
+docker-compose.override.yml
+*.pid
+*.sock
+*.log
+tmp/
+
+# -----------------------
+# Apache / Nginx
+# -----------------------
+# Configs locales que no deberían versionarse
+sites-enabled/
+sites-available/
+conf.d/
+ssl/
+
+# -----------------------
+# IDE / Editor
+# -----------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Node.js (si usás frontends)
+node_modules/
+dist/
+build/
+
+# -----------------------
+# Otros
+# -----------------------
+*.bak
+*.old
+*.orig

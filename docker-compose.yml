@@ -1,0 +1,30 @@
+services:
+  apache:
+    build: .
+    container_name: apache_php
+    volumes:
+      - ./html:/var/www/html
+    expose:
+      - "80"
+
+  nginx:
+    image: nginx:stable
+    container_name: nginx_proxy
+    volumes:
+      - ./html:/var/www/html:ro
+      - ./nginx/${ENV}.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certs:/etc/nginx/certs:ro   # dev
+      - ./letsencrypt:/etc/letsencrypt  # prod
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - apache
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - ./letsencrypt:/etc/letsencrypt
+      - ./html:/var/www/html
+    entrypoint: ["sleep", "infinity"] # Solo prod, para emitir certificados
