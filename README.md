@@ -18,7 +18,7 @@
 ### Construir imagen desarrollo (ENV=dev)
 
 ```bash
-docker-compose up --build
+docker-compose build
 ```
 
 ### Generar certificado autofirmado para desarrollo (emitir antes de levantar contenedores)
@@ -30,13 +30,13 @@ $ docker run --rm -v ${PWD}/certs:/certs alpine/openssl req -x509 -nodes -days 3
 ### Levantar contenedores en desarrollo
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 ### Construir imagen produccion (ENV=prod)
 
 ```bash
-docker-compose up --build
+docker-compose build
 ```
 
 ### Generar certificado con lets encrypt para produccion (emitir antes de levantar contenedores)
@@ -52,5 +52,5 @@ $ docker run --rm \
 ### Levantar contenedores en produccion
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
